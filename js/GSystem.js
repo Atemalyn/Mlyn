@@ -1,8 +1,8 @@
 function Average() {
 
-/*var Student;
+var Student;
 var Course;
-var Subject;*/
+var Subject;
 
 var Grad1;
 var Grad2;
