@@ -1,4 +1,4 @@
-/*function highlightInput(elm) {
+function highlightInput() {
     getElement.style.background="yellow";
 }
  function submit(){
@@ -37,16 +37,14 @@ else if(dayofWeek== 1){
                 alert ("oh its Thiursday!");
                 }    
                 else if(dayofWeek== 5){
-                    alert ("oh its Friday!")
+                    alert ("oh its Friday!");
                     }                  
 else{
 
 alert (Have a nice day!);
 
-
 }
-*/
-var now = new Date();
+/*var now = new Date();
 switch (new Date().getDay()){
 case 0: 
   day = "Sunday";
