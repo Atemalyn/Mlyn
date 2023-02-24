@@ -5,29 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SGS</title>
+    <link rel="stylesheet" href="/css/Gsystem.css">
     <script src="/js/GSystem.js"></script>
 </head>
 <body>
     <div id="Main"></div>
+    <h1><strong>Student Grading System</strong> </h1>
     <fieldset>
-<div id="head"><h1>   Student Record</h1></div>
-<label for="Student"><input type="text" placeholder="Fullname"></label><br><br>
-<label for="Course/section"><input type="text" placeholder="Course & Section"></label><br><br>
-<label for="Subject"><input type="text" placeholder="Subject"></label><br><br>
+<div id="head">
+    <label class="sr"></label><em>Student Record</em><br><br>
+    <form onsubmit="return allfunct()">
+<label class="Student">Fullname :<input type="text" class="FN" id="nym" name= "Fullname" placeholder="Fullname" required></label><br><br>
+<label class="corsec">Course/Section :<input type="text" class="cs" id="cors" name= "corsection" placeholder="Course & Section"></label><br><br>
+<label class="subject">Subject :<input type="text" class="S" id="sub" name= "subj" placeholder="Subject"></label><br><br>
 
-<Label for = "Grad1">PRELIM</Label>
-<input id ="G1" type = "number" name="G1"><br><br>
+<Label class = "Grad1">PRELIM</Label>
+<input class="pl" id ="G1" type = "number" name="G1"><br><br>
 
-<Label for = "Grad2">MIDTERM</Label>
-<input id ="G2" type = "number" name="G2"><br><br>
+<Label class = "Grad2">MIDTERM</Label>
+<input class="mt" id ="G2" type = "number" name="G2"><br><br>
 
-<Label for = "Grad3">FINAL</Label>
-<input id ="G3" type = "number" name="G3"><br><br>
+<Label class = "Grad3">FINAL</Label>
+<input class="fl" id ="G3" type = "number" name="G3"><br><br>
 
-<button onclick="Ave()">Average</button>
-<button onclick="re()">Remarks</button>
+<button class="btn1"  onclick="Ave()">Average</button>
+<button class="btn2" onclick="re()">Remarks</button>
+<button class="reset" onclick="popreset()">Reset</button>
 
+</form>
+
+<div class="finalize">
+    <h2 class="text-result" id="tr">RESULT</h2>
+    <div id="result" class="result pop-up">
+
+</div>
 </div>
     </fieldset>
 </body>
+
 </html>
